@@ -1,0 +1,360 @@
+\hypertarget{class_company}{}\section{Company Class Reference}
+\label{class_company}\index{Company@{Company}}
+
+
+{\ttfamily \#include $<$Company.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_company_a29937dda711b09df306ae7ca9b3d6b42}{Company} ()
+\item 
+bool \hyperlink{class_company_a1d8baa0700d407dc04626234dfc64a7d}{Set\+Garage} (int id\+New)
+\item 
+bool \hyperlink{class_company_a53709d013e28ce90c369bbe1e03bdb19}{Set\+Depot} (int id\+New)
+\item 
+void \hyperlink{class_company_a892a266f60a3ebb48aabec485c8682ca}{Save\+Garage\+Depot} ()
+\item 
+void \hyperlink{class_company_a34305fee36acf01975783bf93cd32c83}{Load\+Garage\+Depot} ()
+\item 
+void \hyperlink{class_company_a359fed3b390aadca60f0eeb65e44cda2}{Load\+Items} ()
+\item 
+void \hyperlink{class_company_a2c673aac2437a245382a0cd6217f96dd}{Load\+Trucks} ()
+\item 
+void \hyperlink{class_company_a6c9b5750fa7f70961ddf4dae6b638e13}{Define\+Garage\+Depot} ()
+\item 
+void \hyperlink{class_company_a7a9675d884dc91258bec9b9c0eddb60a}{Save\+Trucks} ()
+\item 
+void \hyperlink{class_company_a4b4783489c0427134446b37588b7e05b}{Save\+Items} ()
+\item 
+void \hyperlink{class_company_a211481ef27f89e22960bc9fc820dde31}{Read\+Map\+Info} ()
+\item 
+void \hyperlink{class_company_a7464ae89c480c4df2a2d184c80923a39}{Show\+Trucks} ()
+\item 
+void \hyperlink{class_company_a271a395f425f118b47fab9fec33ffe95}{Create\+New\+Truck} ()
+\item 
+void \hyperlink{class_company_a92516e226d988ce58fd0f2c2f4d8734d}{Delete\+Truck} ()
+\item 
+void \hyperlink{class_company_a7df9ce7731ddba2b100bc1e4e76f45b8}{Show\+Items} ()
+\item 
+void \hyperlink{class_company_ae1c6387bd19d79457cdb6d892e2e8f84}{Create\+New\+Item} ()
+\item 
+void \hyperlink{class_company_a9b022d1c50c3dc1c4255779c626d1aea}{Delete\+Item} ()
+\item 
+void \hyperlink{class_company_af134660a3ea77d61fa26f3aa5f1c1ac1}{Search\+Items} ()
+\item 
+void \hyperlink{class_company_ad434315ec4c1b1ba2c7a993927ff8b27}{Show\+Map} (\hyperlink{class_graph}{Graph}$<$ \hyperlink{class_destination}{Destination} $>$ map)
+\item 
+void \hyperlink{class_company_a4b57c8f1d6e8104902aa9f7ccff34da1}{Show\+Delivery\+Points} (vector$<$ \hyperlink{class_item}{Item} $>$ \hyperlink{class_company_ae8deb7528491726ce9d7f708ac4b573f}{items})
+\item 
+void \hyperlink{class_company_a4d8756bccc8a9c09c64f6e8b865d4936}{Show\+Route} (\hyperlink{struct_solution}{Solution}$<$ \hyperlink{class_destination}{Destination} $>$ sol)
+\item 
+double \hyperlink{class_company_acd997232441d4864a78171a94ea224d4}{Calc\+Distance} (double lat1, double long1, double lat2, double long2)
+\item 
+void \hyperlink{class_company_aed2297d6ef23fcb856949e71ac3b2232}{Assign\+Items\+To\+Trucks} ()
+\item 
+void \hyperlink{class_company_a8f768044af804983b36d25d4c31d34cc}{Calc\+Routes} (bool brute\+Force)
+\item 
+void \hyperlink{class_company_a39bfbc6302cd01d21105413086bd95da}{Calc\+Routes\+Brute\+Force} ()
+\item 
+void \hyperlink{class_company_a902b230a634cf369612dd4c6d67c9288}{Calc\+Routes\+Greedy} ()
+\item 
+void \hyperlink{class_company_a293db497700dd7dc96994bedb41f7e2b}{Main\+Menu} ()
+\item 
+\hyperlink{class_graph}{Graph}$<$ \hyperlink{class_destination}{Destination} $>$ \hyperlink{class_company_a2fe3b4810fc9312fae4a534925a5c300}{get\+Destinations} () const 
+\item 
+vector$<$ \hyperlink{class_truck}{Truck} $>$ \hyperlink{class_company_a7022ee40ce49cea9d4fbea169d9e1fa8}{get\+Fleet} () const 
+\item 
+vector$<$ \hyperlink{class_item}{Item} $>$ \hyperlink{class_company_ae5008c2b31b7a86c318047682b351ab6}{get\+Items} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_company_aa4e0bdbed68a33eb0b676104f2049267}{garage\+I\+D} = -\/1
+\item 
+int \hyperlink{class_company_a6be79500acecdd1429d1cf7c17f61f1a}{depot\+I\+D} = -\/1
+\item 
+string \hyperlink{class_company_a691baaaef44107ae1f3f948b2ccf9764}{map\+Img} = \char`\"{}input/mapa\+\_\+img.\+png\char`\"{}
+\item 
+int \hyperlink{class_company_a1f7f015a496bc006684f40425e960304}{map\+Width}
+\item 
+int \hyperlink{class_company_abe112eeb432d183b4a2f8df955b646b4}{map\+Height}
+\item 
+double \hyperlink{class_company_a2284da8a5649f448ecef4e108981095d}{min\+Lat}
+\item 
+double \hyperlink{class_company_aee15fab58f5a645e3f088c5ef886d7b6}{min\+Long}
+\item 
+double \hyperlink{class_company_a0098ebc54b9f250351e4f9864c186f6d}{max\+Lat}
+\item 
+double \hyperlink{class_company_a465bc910733fc1433f3190e735989a92}{max\+Long}
+\item 
+\hyperlink{class_graph}{Graph}$<$ \hyperlink{class_destination}{Destination} $>$ \hyperlink{class_company_af9cff54ba66542f4b845f623927345ac}{destinations}
+\item 
+vector$<$ \hyperlink{class_truck}{Truck} $>$ \hyperlink{class_company_a08e0dda31085960a757708f995573247}{fleet}
+\item 
+vector$<$ \hyperlink{class_item}{Item} $>$ \hyperlink{class_company_ae8deb7528491726ce9d7f708ac4b573f}{items}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_company_a29937dda711b09df306ae7ca9b3d6b42}{}\index{Company@{Company}!Company@{Company}}
+\index{Company@{Company}!Company@{Company}}
+\subsubsection[{Company()}]{\setlength{\rightskip}{0pt plus 5cm}Company\+::\+Company (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a29937dda711b09df306ae7ca9b3d6b42}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_company_aed2297d6ef23fcb856949e71ac3b2232}{}\index{Company@{Company}!Assign\+Items\+To\+Trucks@{Assign\+Items\+To\+Trucks}}
+\index{Assign\+Items\+To\+Trucks@{Assign\+Items\+To\+Trucks}!Company@{Company}}
+\subsubsection[{Assign\+Items\+To\+Trucks()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Assign\+Items\+To\+Trucks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_aed2297d6ef23fcb856949e71ac3b2232}
+\hypertarget{class_company_acd997232441d4864a78171a94ea224d4}{}\index{Company@{Company}!Calc\+Distance@{Calc\+Distance}}
+\index{Calc\+Distance@{Calc\+Distance}!Company@{Company}}
+\subsubsection[{Calc\+Distance(double lat1, double long1, double lat2, double long2)}]{\setlength{\rightskip}{0pt plus 5cm}double Company\+::\+Calc\+Distance (
+\begin{DoxyParamCaption}
+\item[{double}]{lat1, }
+\item[{double}]{long1, }
+\item[{double}]{lat2, }
+\item[{double}]{long2}
+\end{DoxyParamCaption}
+)}\label{class_company_acd997232441d4864a78171a94ea224d4}
+\hypertarget{class_company_a8f768044af804983b36d25d4c31d34cc}{}\index{Company@{Company}!Calc\+Routes@{Calc\+Routes}}
+\index{Calc\+Routes@{Calc\+Routes}!Company@{Company}}
+\subsubsection[{Calc\+Routes(bool brute\+Force)}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Calc\+Routes (
+\begin{DoxyParamCaption}
+\item[{bool}]{brute\+Force}
+\end{DoxyParamCaption}
+)}\label{class_company_a8f768044af804983b36d25d4c31d34cc}
+\hypertarget{class_company_a39bfbc6302cd01d21105413086bd95da}{}\index{Company@{Company}!Calc\+Routes\+Brute\+Force@{Calc\+Routes\+Brute\+Force}}
+\index{Calc\+Routes\+Brute\+Force@{Calc\+Routes\+Brute\+Force}!Company@{Company}}
+\subsubsection[{Calc\+Routes\+Brute\+Force()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Calc\+Routes\+Brute\+Force (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a39bfbc6302cd01d21105413086bd95da}
+\hypertarget{class_company_a902b230a634cf369612dd4c6d67c9288}{}\index{Company@{Company}!Calc\+Routes\+Greedy@{Calc\+Routes\+Greedy}}
+\index{Calc\+Routes\+Greedy@{Calc\+Routes\+Greedy}!Company@{Company}}
+\subsubsection[{Calc\+Routes\+Greedy()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Calc\+Routes\+Greedy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a902b230a634cf369612dd4c6d67c9288}
+\hypertarget{class_company_ae1c6387bd19d79457cdb6d892e2e8f84}{}\index{Company@{Company}!Create\+New\+Item@{Create\+New\+Item}}
+\index{Create\+New\+Item@{Create\+New\+Item}!Company@{Company}}
+\subsubsection[{Create\+New\+Item()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Create\+New\+Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_ae1c6387bd19d79457cdb6d892e2e8f84}
+\hypertarget{class_company_a271a395f425f118b47fab9fec33ffe95}{}\index{Company@{Company}!Create\+New\+Truck@{Create\+New\+Truck}}
+\index{Create\+New\+Truck@{Create\+New\+Truck}!Company@{Company}}
+\subsubsection[{Create\+New\+Truck()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Create\+New\+Truck (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a271a395f425f118b47fab9fec33ffe95}
+\hypertarget{class_company_a6c9b5750fa7f70961ddf4dae6b638e13}{}\index{Company@{Company}!Define\+Garage\+Depot@{Define\+Garage\+Depot}}
+\index{Define\+Garage\+Depot@{Define\+Garage\+Depot}!Company@{Company}}
+\subsubsection[{Define\+Garage\+Depot()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Define\+Garage\+Depot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a6c9b5750fa7f70961ddf4dae6b638e13}
+\hypertarget{class_company_a9b022d1c50c3dc1c4255779c626d1aea}{}\index{Company@{Company}!Delete\+Item@{Delete\+Item}}
+\index{Delete\+Item@{Delete\+Item}!Company@{Company}}
+\subsubsection[{Delete\+Item()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Delete\+Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a9b022d1c50c3dc1c4255779c626d1aea}
+\hypertarget{class_company_a92516e226d988ce58fd0f2c2f4d8734d}{}\index{Company@{Company}!Delete\+Truck@{Delete\+Truck}}
+\index{Delete\+Truck@{Delete\+Truck}!Company@{Company}}
+\subsubsection[{Delete\+Truck()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Delete\+Truck (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a92516e226d988ce58fd0f2c2f4d8734d}
+\hypertarget{class_company_a2fe3b4810fc9312fae4a534925a5c300}{}\index{Company@{Company}!get\+Destinations@{get\+Destinations}}
+\index{get\+Destinations@{get\+Destinations}!Company@{Company}}
+\subsubsection[{get\+Destinations() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Graph}$<${\bf Destination}$>$ Company\+::get\+Destinations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_company_a2fe3b4810fc9312fae4a534925a5c300}
+\hypertarget{class_company_a7022ee40ce49cea9d4fbea169d9e1fa8}{}\index{Company@{Company}!get\+Fleet@{get\+Fleet}}
+\index{get\+Fleet@{get\+Fleet}!Company@{Company}}
+\subsubsection[{get\+Fleet() const }]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Truck}$>$ Company\+::get\+Fleet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_company_a7022ee40ce49cea9d4fbea169d9e1fa8}
+\hypertarget{class_company_ae5008c2b31b7a86c318047682b351ab6}{}\index{Company@{Company}!get\+Items@{get\+Items}}
+\index{get\+Items@{get\+Items}!Company@{Company}}
+\subsubsection[{get\+Items() const }]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Item}$>$ Company\+::get\+Items (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_company_ae5008c2b31b7a86c318047682b351ab6}
+\hypertarget{class_company_a34305fee36acf01975783bf93cd32c83}{}\index{Company@{Company}!Load\+Garage\+Depot@{Load\+Garage\+Depot}}
+\index{Load\+Garage\+Depot@{Load\+Garage\+Depot}!Company@{Company}}
+\subsubsection[{Load\+Garage\+Depot()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Load\+Garage\+Depot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a34305fee36acf01975783bf93cd32c83}
+\hypertarget{class_company_a359fed3b390aadca60f0eeb65e44cda2}{}\index{Company@{Company}!Load\+Items@{Load\+Items}}
+\index{Load\+Items@{Load\+Items}!Company@{Company}}
+\subsubsection[{Load\+Items()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Load\+Items (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a359fed3b390aadca60f0eeb65e44cda2}
+\hypertarget{class_company_a2c673aac2437a245382a0cd6217f96dd}{}\index{Company@{Company}!Load\+Trucks@{Load\+Trucks}}
+\index{Load\+Trucks@{Load\+Trucks}!Company@{Company}}
+\subsubsection[{Load\+Trucks()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Load\+Trucks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a2c673aac2437a245382a0cd6217f96dd}
+\hypertarget{class_company_a293db497700dd7dc96994bedb41f7e2b}{}\index{Company@{Company}!Main\+Menu@{Main\+Menu}}
+\index{Main\+Menu@{Main\+Menu}!Company@{Company}}
+\subsubsection[{Main\+Menu()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Main\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a293db497700dd7dc96994bedb41f7e2b}
+\hypertarget{class_company_a211481ef27f89e22960bc9fc820dde31}{}\index{Company@{Company}!Read\+Map\+Info@{Read\+Map\+Info}}
+\index{Read\+Map\+Info@{Read\+Map\+Info}!Company@{Company}}
+\subsubsection[{Read\+Map\+Info()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Read\+Map\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a211481ef27f89e22960bc9fc820dde31}
+\hypertarget{class_company_a892a266f60a3ebb48aabec485c8682ca}{}\index{Company@{Company}!Save\+Garage\+Depot@{Save\+Garage\+Depot}}
+\index{Save\+Garage\+Depot@{Save\+Garage\+Depot}!Company@{Company}}
+\subsubsection[{Save\+Garage\+Depot()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Save\+Garage\+Depot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a892a266f60a3ebb48aabec485c8682ca}
+\hypertarget{class_company_a4b4783489c0427134446b37588b7e05b}{}\index{Company@{Company}!Save\+Items@{Save\+Items}}
+\index{Save\+Items@{Save\+Items}!Company@{Company}}
+\subsubsection[{Save\+Items()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Save\+Items (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a4b4783489c0427134446b37588b7e05b}
+\hypertarget{class_company_a7a9675d884dc91258bec9b9c0eddb60a}{}\index{Company@{Company}!Save\+Trucks@{Save\+Trucks}}
+\index{Save\+Trucks@{Save\+Trucks}!Company@{Company}}
+\subsubsection[{Save\+Trucks()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Save\+Trucks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a7a9675d884dc91258bec9b9c0eddb60a}
+\hypertarget{class_company_af134660a3ea77d61fa26f3aa5f1c1ac1}{}\index{Company@{Company}!Search\+Items@{Search\+Items}}
+\index{Search\+Items@{Search\+Items}!Company@{Company}}
+\subsubsection[{Search\+Items()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Search\+Items (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_af134660a3ea77d61fa26f3aa5f1c1ac1}
+\hypertarget{class_company_a53709d013e28ce90c369bbe1e03bdb19}{}\index{Company@{Company}!Set\+Depot@{Set\+Depot}}
+\index{Set\+Depot@{Set\+Depot}!Company@{Company}}
+\subsubsection[{Set\+Depot(int id\+New)}]{\setlength{\rightskip}{0pt plus 5cm}bool Company\+::\+Set\+Depot (
+\begin{DoxyParamCaption}
+\item[{int}]{id\+New}
+\end{DoxyParamCaption}
+)}\label{class_company_a53709d013e28ce90c369bbe1e03bdb19}
+\hypertarget{class_company_a1d8baa0700d407dc04626234dfc64a7d}{}\index{Company@{Company}!Set\+Garage@{Set\+Garage}}
+\index{Set\+Garage@{Set\+Garage}!Company@{Company}}
+\subsubsection[{Set\+Garage(int id\+New)}]{\setlength{\rightskip}{0pt plus 5cm}bool Company\+::\+Set\+Garage (
+\begin{DoxyParamCaption}
+\item[{int}]{id\+New}
+\end{DoxyParamCaption}
+)}\label{class_company_a1d8baa0700d407dc04626234dfc64a7d}
+\hypertarget{class_company_a4b57c8f1d6e8104902aa9f7ccff34da1}{}\index{Company@{Company}!Show\+Delivery\+Points@{Show\+Delivery\+Points}}
+\index{Show\+Delivery\+Points@{Show\+Delivery\+Points}!Company@{Company}}
+\subsubsection[{Show\+Delivery\+Points(vector$<$ Item $>$ items)}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Show\+Delivery\+Points (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Item} $>$}]{items}
+\end{DoxyParamCaption}
+)}\label{class_company_a4b57c8f1d6e8104902aa9f7ccff34da1}
+\hypertarget{class_company_a7df9ce7731ddba2b100bc1e4e76f45b8}{}\index{Company@{Company}!Show\+Items@{Show\+Items}}
+\index{Show\+Items@{Show\+Items}!Company@{Company}}
+\subsubsection[{Show\+Items()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Show\+Items (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a7df9ce7731ddba2b100bc1e4e76f45b8}
+\hypertarget{class_company_ad434315ec4c1b1ba2c7a993927ff8b27}{}\index{Company@{Company}!Show\+Map@{Show\+Map}}
+\index{Show\+Map@{Show\+Map}!Company@{Company}}
+\subsubsection[{Show\+Map(\+Graph$<$ Destination $>$ map)}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Show\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf Graph}$<$ {\bf Destination} $>$}]{map}
+\end{DoxyParamCaption}
+)}\label{class_company_ad434315ec4c1b1ba2c7a993927ff8b27}
+\hypertarget{class_company_a4d8756bccc8a9c09c64f6e8b865d4936}{}\index{Company@{Company}!Show\+Route@{Show\+Route}}
+\index{Show\+Route@{Show\+Route}!Company@{Company}}
+\subsubsection[{Show\+Route(\+Solution$<$ Destination $>$ sol)}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Show\+Route (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution}$<$ {\bf Destination} $>$}]{sol}
+\end{DoxyParamCaption}
+)}\label{class_company_a4d8756bccc8a9c09c64f6e8b865d4936}
+\hypertarget{class_company_a7464ae89c480c4df2a2d184c80923a39}{}\index{Company@{Company}!Show\+Trucks@{Show\+Trucks}}
+\index{Show\+Trucks@{Show\+Trucks}!Company@{Company}}
+\subsubsection[{Show\+Trucks()}]{\setlength{\rightskip}{0pt plus 5cm}void Company\+::\+Show\+Trucks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_company_a7464ae89c480c4df2a2d184c80923a39}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_company_a6be79500acecdd1429d1cf7c17f61f1a}{}\index{Company@{Company}!depot\+I\+D@{depot\+I\+D}}
+\index{depot\+I\+D@{depot\+I\+D}!Company@{Company}}
+\subsubsection[{depot\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}int Company\+::depot\+I\+D = -\/1\hspace{0.3cm}{\ttfamily [protected]}}\label{class_company_a6be79500acecdd1429d1cf7c17f61f1a}
+\hypertarget{class_company_af9cff54ba66542f4b845f623927345ac}{}\index{Company@{Company}!destinations@{destinations}}
+\index{destinations@{destinations}!Company@{Company}}
+\subsubsection[{destinations}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Graph}$<${\bf Destination}$>$ Company\+::destinations\hspace{0.3cm}{\ttfamily [protected]}}\label{class_company_af9cff54ba66542f4b845f623927345ac}
+\hypertarget{class_company_a08e0dda31085960a757708f995573247}{}\index{Company@{Company}!fleet@{fleet}}
+\index{fleet@{fleet}!Company@{Company}}
+\subsubsection[{fleet}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Truck}$>$ Company\+::fleet\hspace{0.3cm}{\ttfamily [protected]}}\label{class_company_a08e0dda31085960a757708f995573247}
+\hypertarget{class_company_aa4e0bdbed68a33eb0b676104f2049267}{}\index{Company@{Company}!garage\+I\+D@{garage\+I\+D}}
+\index{garage\+I\+D@{garage\+I\+D}!Company@{Company}}
+\subsubsection[{garage\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}int Company\+::garage\+I\+D = -\/1\hspace{0.3cm}{\ttfamily [protected]}}\label{class_company_aa4e0bdbed68a33eb0b676104f2049267}
+\hypertarget{class_company_ae8deb7528491726ce9d7f708ac4b573f}{}\index{Company@{Company}!items@{items}}
+\index{items@{items}!Company@{Company}}
+\subsubsection[{items}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Item}$>$ Company\+::items\hspace{0.3cm}{\ttfamily [protected]}}\label{class_company_ae8deb7528491726ce9d7f708ac4b573f}
+\hypertarget{class_company_abe112eeb432d183b4a2f8df955b646b4}{}\index{Company@{Company}!map\+Height@{map\+Height}}
+\index{map\+Height@{map\+Height}!Company@{Company}}
+\subsubsection[{map\+Height}]{\setlength{\rightskip}{0pt plus 5cm}int Company\+::map\+Height\hspace{0.3cm}{\ttfamily [protected]}}\label{class_company_abe112eeb432d183b4a2f8df955b646b4}
+\hypertarget{class_company_a691baaaef44107ae1f3f948b2ccf9764}{}\index{Company@{Company}!map\+Img@{map\+Img}}
+\index{map\+Img@{map\+Img}!Company@{Company}}
+\subsubsection[{map\+Img}]{\setlength{\rightskip}{0pt plus 5cm}string Company\+::map\+Img = \char`\"{}input/mapa\+\_\+img.\+png\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}\label{class_company_a691baaaef44107ae1f3f948b2ccf9764}
+\hypertarget{class_company_a1f7f015a496bc006684f40425e960304}{}\index{Company@{Company}!map\+Width@{map\+Width}}
+\index{map\+Width@{map\+Width}!Company@{Company}}
+\subsubsection[{map\+Width}]{\setlength{\rightskip}{0pt plus 5cm}int Company\+::map\+Width\hspace{0.3cm}{\ttfamily [protected]}}\label{class_company_a1f7f015a496bc006684f40425e960304}
+\hypertarget{class_company_a0098ebc54b9f250351e4f9864c186f6d}{}\index{Company@{Company}!max\+Lat@{max\+Lat}}
+\index{max\+Lat@{max\+Lat}!Company@{Company}}
+\subsubsection[{max\+Lat}]{\setlength{\rightskip}{0pt plus 5cm}double Company\+::max\+Lat\hspace{0.3cm}{\ttfamily [protected]}}\label{class_company_a0098ebc54b9f250351e4f9864c186f6d}
+\hypertarget{class_company_a465bc910733fc1433f3190e735989a92}{}\index{Company@{Company}!max\+Long@{max\+Long}}
+\index{max\+Long@{max\+Long}!Company@{Company}}
+\subsubsection[{max\+Long}]{\setlength{\rightskip}{0pt plus 5cm}double Company\+::max\+Long\hspace{0.3cm}{\ttfamily [protected]}}\label{class_company_a465bc910733fc1433f3190e735989a92}
+\hypertarget{class_company_a2284da8a5649f448ecef4e108981095d}{}\index{Company@{Company}!min\+Lat@{min\+Lat}}
+\index{min\+Lat@{min\+Lat}!Company@{Company}}
+\subsubsection[{min\+Lat}]{\setlength{\rightskip}{0pt plus 5cm}double Company\+::min\+Lat\hspace{0.3cm}{\ttfamily [protected]}}\label{class_company_a2284da8a5649f448ecef4e108981095d}
+\hypertarget{class_company_aee15fab58f5a645e3f088c5ef886d7b6}{}\index{Company@{Company}!min\+Long@{min\+Long}}
+\index{min\+Long@{min\+Long}!Company@{Company}}
+\subsubsection[{min\+Long}]{\setlength{\rightskip}{0pt plus 5cm}double Company\+::min\+Long\hspace{0.3cm}{\ttfamily [protected]}}\label{class_company_aee15fab58f5a645e3f088c5ef886d7b6}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_company_8h}{Company.\+h}\item 
+\hyperlink{_company_8cpp}{Company.\+cpp}\end{DoxyCompactItemize}

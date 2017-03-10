@@ -1,0 +1,1 @@
+Utilizacao da flag -std=c++11

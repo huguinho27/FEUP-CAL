@@ -1,0 +1,169 @@
+\hypertarget{class_truck}{}\section{Truck Class Reference}
+\label{class_truck}\index{Truck@{Truck}}
+
+
+{\ttfamily \#include $<$Truck.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_truck_a87e358bca8fe34e6299c6ff233afb08b}{Truck} ()
+\item 
+\hyperlink{class_truck_ac0858b8c59242c95eaa84626c930e4bf}{Truck} (int \hyperlink{class_truck_a598e606d5c16e5664e222ad13c02db77}{id}, double \hyperlink{class_truck_a6d90d9d2c20e89194204c2df9f979539}{capacidade})
+\item 
+double \hyperlink{class_truck_af808e9645d27673a022addab061d609c}{get\+Capacidade} () const 
+\item 
+double \hyperlink{class_truck_aec408294112b2cb579e86d252750a5ad}{get\+Current\+Cap} ()
+\item 
+int \hyperlink{class_truck_a583716d027c07c71f16f6ee1a9fbdc06}{get\+I\+D} () const 
+\item 
+bool \hyperlink{class_truck_aa730c597f013c6676d4014d68e989379}{add\+Item} (\hyperlink{class_item}{Item} i)
+\item 
+bool \hyperlink{class_truck_aec7e2c7369d987f120c327b24b02a61e}{operator$<$} (const \hyperlink{class_truck}{Truck} \&right) const 
+\item 
+double \hyperlink{class_truck_a926e53d7dc3a8078b9f5f0c4c8220e4b}{get\+Free\+Weight} () const 
+\item 
+vector$<$ \hyperlink{class_item}{Item} $>$ \hyperlink{class_truck_a136f9d628ee239bcce13121fe93598b7}{get\+Items} ()
+\item 
+void \hyperlink{class_truck_a9a97d0e2b747669e7f29729c598d559e}{clear\+Itens} ()
+\item 
+\hyperlink{struct_solution}{Solution}$<$ \hyperlink{class_destination}{Destination} $>$ \hyperlink{class_truck_aeb1b84bd2813e1ff66156e3668316d10}{get\+Route} ()
+\item 
+void \hyperlink{class_truck_a1210291d159fe120cd5540825a4afbf7}{calc\+Route} (\hyperlink{class_destination}{Destination} start, \hyperlink{class_destination}{Destination} end, \hyperlink{class_graph}{Graph}$<$ \hyperlink{class_destination}{Destination} $>$ map, bool bruteforce)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_truck_a598e606d5c16e5664e222ad13c02db77}{id}
+\item 
+double \hyperlink{class_truck_a6d90d9d2c20e89194204c2df9f979539}{capacidade}
+\item 
+double \hyperlink{class_truck_ae883df76f65437437b318d0eceeea7e2}{current\+\_\+cap} = 0
+\item 
+vector$<$ \hyperlink{class_item}{Item} $>$ \hyperlink{class_truck_a0f9b7ed803cef756b315319349cdef80}{itens}
+\item 
+\hyperlink{class_graph}{Graph}$<$ \hyperlink{class_destination}{Destination} $>$ \hyperlink{class_truck_a2be9cfee5a2f2a059e913a537bfd415d}{entregas}
+\item 
+\hyperlink{struct_solution}{Solution}$<$ \hyperlink{class_destination}{Destination} $>$ \hyperlink{class_truck_a8f24dbb55babf8015864f4a453d1efd7}{route}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_truck_a87e358bca8fe34e6299c6ff233afb08b}{}\index{Truck@{Truck}!Truck@{Truck}}
+\index{Truck@{Truck}!Truck@{Truck}}
+\subsubsection[{Truck()}]{\setlength{\rightskip}{0pt plus 5cm}Truck\+::\+Truck (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_truck_a87e358bca8fe34e6299c6ff233afb08b}
+\hypertarget{class_truck_ac0858b8c59242c95eaa84626c930e4bf}{}\index{Truck@{Truck}!Truck@{Truck}}
+\index{Truck@{Truck}!Truck@{Truck}}
+\subsubsection[{Truck(int id, double capacidade)}]{\setlength{\rightskip}{0pt plus 5cm}Truck\+::\+Truck (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{double}]{capacidade}
+\end{DoxyParamCaption}
+)}\label{class_truck_ac0858b8c59242c95eaa84626c930e4bf}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_truck_aa730c597f013c6676d4014d68e989379}{}\index{Truck@{Truck}!add\+Item@{add\+Item}}
+\index{add\+Item@{add\+Item}!Truck@{Truck}}
+\subsubsection[{add\+Item(\+Item i)}]{\setlength{\rightskip}{0pt plus 5cm}bool Truck\+::add\+Item (
+\begin{DoxyParamCaption}
+\item[{{\bf Item}}]{i}
+\end{DoxyParamCaption}
+)}\label{class_truck_aa730c597f013c6676d4014d68e989379}
+\hypertarget{class_truck_a1210291d159fe120cd5540825a4afbf7}{}\index{Truck@{Truck}!calc\+Route@{calc\+Route}}
+\index{calc\+Route@{calc\+Route}!Truck@{Truck}}
+\subsubsection[{calc\+Route(\+Destination start, Destination end, Graph$<$ Destination $>$ map, bool bruteforce)}]{\setlength{\rightskip}{0pt plus 5cm}void Truck\+::calc\+Route (
+\begin{DoxyParamCaption}
+\item[{{\bf Destination}}]{start, }
+\item[{{\bf Destination}}]{end, }
+\item[{{\bf Graph}$<$ {\bf Destination} $>$}]{map, }
+\item[{bool}]{bruteforce}
+\end{DoxyParamCaption}
+)}\label{class_truck_a1210291d159fe120cd5540825a4afbf7}
+\hypertarget{class_truck_a9a97d0e2b747669e7f29729c598d559e}{}\index{Truck@{Truck}!clear\+Itens@{clear\+Itens}}
+\index{clear\+Itens@{clear\+Itens}!Truck@{Truck}}
+\subsubsection[{clear\+Itens()}]{\setlength{\rightskip}{0pt plus 5cm}void Truck\+::clear\+Itens (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_truck_a9a97d0e2b747669e7f29729c598d559e}
+\hypertarget{class_truck_af808e9645d27673a022addab061d609c}{}\index{Truck@{Truck}!get\+Capacidade@{get\+Capacidade}}
+\index{get\+Capacidade@{get\+Capacidade}!Truck@{Truck}}
+\subsubsection[{get\+Capacidade() const }]{\setlength{\rightskip}{0pt plus 5cm}double Truck\+::get\+Capacidade (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_truck_af808e9645d27673a022addab061d609c}
+\hypertarget{class_truck_aec408294112b2cb579e86d252750a5ad}{}\index{Truck@{Truck}!get\+Current\+Cap@{get\+Current\+Cap}}
+\index{get\+Current\+Cap@{get\+Current\+Cap}!Truck@{Truck}}
+\subsubsection[{get\+Current\+Cap()}]{\setlength{\rightskip}{0pt plus 5cm}double Truck\+::get\+Current\+Cap (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_truck_aec408294112b2cb579e86d252750a5ad}
+\hypertarget{class_truck_a926e53d7dc3a8078b9f5f0c4c8220e4b}{}\index{Truck@{Truck}!get\+Free\+Weight@{get\+Free\+Weight}}
+\index{get\+Free\+Weight@{get\+Free\+Weight}!Truck@{Truck}}
+\subsubsection[{get\+Free\+Weight() const }]{\setlength{\rightskip}{0pt plus 5cm}double Truck\+::get\+Free\+Weight (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_truck_a926e53d7dc3a8078b9f5f0c4c8220e4b}
+\hypertarget{class_truck_a583716d027c07c71f16f6ee1a9fbdc06}{}\index{Truck@{Truck}!get\+I\+D@{get\+I\+D}}
+\index{get\+I\+D@{get\+I\+D}!Truck@{Truck}}
+\subsubsection[{get\+I\+D() const }]{\setlength{\rightskip}{0pt plus 5cm}int Truck\+::get\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_truck_a583716d027c07c71f16f6ee1a9fbdc06}
+\hypertarget{class_truck_a136f9d628ee239bcce13121fe93598b7}{}\index{Truck@{Truck}!get\+Items@{get\+Items}}
+\index{get\+Items@{get\+Items}!Truck@{Truck}}
+\subsubsection[{get\+Items()}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Item}$>$ Truck\+::get\+Items (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_truck_a136f9d628ee239bcce13121fe93598b7}
+\hypertarget{class_truck_aeb1b84bd2813e1ff66156e3668316d10}{}\index{Truck@{Truck}!get\+Route@{get\+Route}}
+\index{get\+Route@{get\+Route}!Truck@{Truck}}
+\subsubsection[{get\+Route()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Solution}$<${\bf Destination}$>$ Truck\+::get\+Route (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_truck_aeb1b84bd2813e1ff66156e3668316d10}
+\hypertarget{class_truck_aec7e2c7369d987f120c327b24b02a61e}{}\index{Truck@{Truck}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Truck@{Truck}}
+\subsubsection[{operator$<$(const Truck \&right) const }]{\setlength{\rightskip}{0pt plus 5cm}bool Truck\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Truck} \&}]{right}
+\end{DoxyParamCaption}
+) const}\label{class_truck_aec7e2c7369d987f120c327b24b02a61e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_truck_a6d90d9d2c20e89194204c2df9f979539}{}\index{Truck@{Truck}!capacidade@{capacidade}}
+\index{capacidade@{capacidade}!Truck@{Truck}}
+\subsubsection[{capacidade}]{\setlength{\rightskip}{0pt plus 5cm}double Truck\+::capacidade\hspace{0.3cm}{\ttfamily [protected]}}\label{class_truck_a6d90d9d2c20e89194204c2df9f979539}
+\hypertarget{class_truck_ae883df76f65437437b318d0eceeea7e2}{}\index{Truck@{Truck}!current\+\_\+cap@{current\+\_\+cap}}
+\index{current\+\_\+cap@{current\+\_\+cap}!Truck@{Truck}}
+\subsubsection[{current\+\_\+cap}]{\setlength{\rightskip}{0pt plus 5cm}double Truck\+::current\+\_\+cap = 0\hspace{0.3cm}{\ttfamily [protected]}}\label{class_truck_ae883df76f65437437b318d0eceeea7e2}
+\hypertarget{class_truck_a2be9cfee5a2f2a059e913a537bfd415d}{}\index{Truck@{Truck}!entregas@{entregas}}
+\index{entregas@{entregas}!Truck@{Truck}}
+\subsubsection[{entregas}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Graph}$<${\bf Destination}$>$ Truck\+::entregas\hspace{0.3cm}{\ttfamily [protected]}}\label{class_truck_a2be9cfee5a2f2a059e913a537bfd415d}
+\hypertarget{class_truck_a598e606d5c16e5664e222ad13c02db77}{}\index{Truck@{Truck}!id@{id}}
+\index{id@{id}!Truck@{Truck}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}int Truck\+::id\hspace{0.3cm}{\ttfamily [protected]}}\label{class_truck_a598e606d5c16e5664e222ad13c02db77}
+\hypertarget{class_truck_a0f9b7ed803cef756b315319349cdef80}{}\index{Truck@{Truck}!itens@{itens}}
+\index{itens@{itens}!Truck@{Truck}}
+\subsubsection[{itens}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Item}$>$ Truck\+::itens\hspace{0.3cm}{\ttfamily [protected]}}\label{class_truck_a0f9b7ed803cef756b315319349cdef80}
+\hypertarget{class_truck_a8f24dbb55babf8015864f4a453d1efd7}{}\index{Truck@{Truck}!route@{route}}
+\index{route@{route}!Truck@{Truck}}
+\subsubsection[{route}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Solution}$<${\bf Destination}$>$ Truck\+::route\hspace{0.3cm}{\ttfamily [protected]}}\label{class_truck_a8f24dbb55babf8015864f4a453d1efd7}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_truck_8h}{Truck.\+h}\item 
+\hyperlink{_truck_8cpp}{Truck.\+cpp}\end{DoxyCompactItemize}

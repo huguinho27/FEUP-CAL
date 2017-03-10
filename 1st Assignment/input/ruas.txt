@@ -1,0 +1,178 @@
+28393864;Avenida Henrique Lopes de Mendonça;False
+28394191;Avenida Henrique Lopes de Mendonça;False
+28394183;Rua Amadeu de Souza Cardoso;False
+28589553;;True
+28589578;Rua de Francisco Barreto;True
+28590466;Rua de Dom Cristóvão da Gama;True
+28590667;Rua Marta Mesquita da Câmara;True
+28590836;;True
+28590842;;True
+28590826;Rua de António Galvão;False
+28594025;Rua de André Álvares de Almada;False
+40643214;Rua João de Barros;True
+40643208;Avenida Henrique Lopes de Mendonça;False
+40643209;Avenida Henrique Lopes de Mendonça;False
+28590643;Rua de Dom Luís de Ataíde;False
+40643169;Rua de Júlio de Brito;False
+40643182;Rua de Júlio de Brito;False
+40643175;Rua de Viana de Lima;False
+40643237;Rua de Viana da Mota;False
+40643202;Rua de João de Queirós;False
+40643190;Rua de Tristão da Cunha;False
+40643198;Rua de Henrique Lopes de Mendonça;False
+34613887;Rua de Gil Eanes;False
+28593894;Rua de Serralves;False
+28593855;Rua do Carvalho;False
+28593851;Rua do Carvalho;False
+28594022;Rua de Afonso de Paiva;False
+28594021;Rua de Afonso de Paiva;False
+36835963;Rua Dom João de Mascarenhas;False
+36836046;Rua de Alfredo Keil;False
+36836034;Travessa da Mouteira;False
+36836039;Rua de Cima;False
+36835345;Rua Fernão Lopes;False
+36836030;Rua Doutor Nuno Pinheiro Torres;False
+39992326;Rua de André de Resende;False
+39992327;Rua de André de Resende;False
+40859299;Rua de Garcia da Orta;False
+40859293;Rua do Padre Fernão Cardim;False
+40864323;Rua dos Prazeres;False
+40864324;Rua do Padre Luís Cabral;False
+51228950;Rua de Viana de Lima;False
+51228951;Rua de Viana de Lima;False
+51228949;Rua do Padre José Anchieta;True
+39991718;Rua de Henrique Moreira;True
+39992375;Rua do Padre Luís Cabral;True
+40859297;Largo de Diogo Gomes;True
+28394176;Rua Bartolomeu Velho;True
+40859289;Rua de Nicolau Coelho;True
+40859295;Rua António Mariz Carneiro;True
+39992328;Rua de Rui de Pina;True
+40859288;;True
+40859294;Rua do Padre Luís d'Almeida;True
+28590802;;False
+13281765;Avenida do Marechal Gomes da Costa;False
+28590704;Rua de Tomé de Sousa;True
+51228955;;True
+51228952;;True
+159752061;Rua de João de Barros;False
+40557463;;False
+28590544;Avenida do Marechal Gomes da Costa;False
+36835962;;False
+165051489;;False
+165051256;Condominios;False
+165051591;Atalho Rua Alfredo Keil - Rua Henrrique Lopes de Mendonça;False
+165052096;;True
+165052097;;True
+165052007;;True
+165052010;;True
+165052008;;True
+165545792;;True
+165545791;;True
+165546650;;True
+165546637;;True
+165546649;;True
+165546642;;True
+165546640;;True
+165546652;;True
+165546638;;True
+165546644;;True
+165546639;;True
+165546645;;True
+28394235;Rua Diogo do Couto;False
+36836083;Rua Fernão Lopes;False
+40859291;Rua Vieira da Silva;False
+28593997;Rua Gomes Eanes de Azurara;False
+167487333;Condominios;False
+167487334;Condominios;False
+167487349;Rua Diogo do Couto;False
+167487350;Rua Dom João de Mascarenhas;False
+167487351;Rua Dom João de Mascarenhas;False
+167487352;Rua Dom João de Mascarenhas;False
+167487353;Rua Marta Mesquita da Câmara;False
+167487362;Rua de Diogo Botelho;True
+167487404;;False
+167487411;;False
+167487437;;True
+167487442;;True
+167487487;;False
+167487488;;False
+167487495;;False
+167487501;;False
+167487504;;False
+28594031;Rua de Gonçalo Velho;True
+40859290;Rua de Costa Júnior;True
+28590653;Rua de Dom Luís de Ataíde;False
+40859292;Rua de Domingos Alvão;False
+28590727;Rua de João Rodrigues Cabrilho;False
+36836047;Rua de João de Barros;False
+36835964;;False
+120829941;;False
+120829939;;False
+120829940;;False
+28590740;;False
+120829935;;False
+28590603;Rua de Duarte Lopes;False
+40859296;;False
+120829937;;False
+120829934;;False
+165545921;;False
+120829936;;False
+165545793;;False
+40643212;;False
+173372582;;False
+167487424;;False
+224649280;Avenida do Marechal Gomes da Costa;False
+224649282;Rua João de Barros;False
+224649289;Avenida do Marechal Gomes da Costa;False
+167487382;Rua do Professor Luís de Pina;False
+224645842;Avenida Henrique Lopes de Mendonça;False
+224645843;Rua João de Barros;False
+224645846;;False
+224645847;Avenida Henrique Lopes de Mendonça;False
+224645469;Rua de Alfredo Keil;False
+224645479;Avenida do Marechal Gomes da Costa;False
+40556952;Rua de Alfredo Keil;False
+224645485;Avenida do Marechal Gomes da Costa;False
+28590809;Rua do Professor Luís de Pina;False
+36836045;Rua de João de Barros;True
+252505455;Rua de João de Barros;True
+252516371;Rua João de Barros;False
+224645845;Rua João de Barros;False
+28394198;Rua João de Barros;False
+252516370;Rua João de Barros;False
+252516522;Rua Bartolomeu Velho;False
+252516524;Rua João de Barros;False
+207634493;Rua Bartolomeu Velho;False
+28590455;Rua João de Barros;False
+252517114;Rua Gomes Eanes de Azurara;False
+28593993;Rua Gomes Eanes de Azurara;False
+252502755;Rua Dom Francisco de Almeida;False
+40643217;Rua de António Galvão;False
+167487401;;False
+202181268;Rua de Fernão Lopes de Castanheda;True
+207634489;Rua Bartolomeu Velho;True
+207634498;Rua de Duarte Lopes;True
+207634500;Rua de Garcia da Orta;True
+207634509;Rua de André Álvares de Almada;True
+207634487;Rua de Diogo Botelho;True
+207634522;Avenida do Marechal Gomes da Costa;False
+207634529;Rua de Gil Eanes;False
+207634496;Rua de Francisco Barreto;False
+207634518;Avenida do Marechal Gomes da Costa;False
+207634528;Rua de Dom João de Castro;False
+224645844;;False
+167487515;;False
+209436195;Rua de Francisco Barreto;False
+209436198;Rua de Duarte Lopes;False
+209444521;Avenida do Marechal Gomes da Costa;False
+237715267;;True
+237715162;;True
+297436774;;True
+297622530;;True
+309557724;;True
+386440054;Avenida do Marechal Gomes da Costa;True
+386440055;Avenida do Marechal Gomes da Costa;True
+386440354;;False
+386440360;;False
+297436768;;False

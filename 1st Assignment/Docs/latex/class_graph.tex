@@ -1,0 +1,260 @@
+\hypertarget{class_graph}{}\section{Graph$<$ T $>$ Class Template Reference}
+\label{class_graph}\index{Graph$<$ T $>$@{Graph$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_graph_a00be284ea2be3b3d0f0d2e493b70245b}{add\+Vertex} (const T \&in)
+\item 
+bool \hyperlink{class_graph_ac61af3aafe6277215f5a3b3cc7d58ce2}{add\+Edge} (const T \&sourc, const T \&dest, double w)
+\item 
+bool \hyperlink{class_graph_af9c903104ad69a7782979fa9caedf163}{remove\+Vertex} (const T \&in)
+\item 
+bool \hyperlink{class_graph_a1106092a37366486cf55576f9ec01692}{remove\+Edge} (const T \&sourc, const T \&dest)
+\item 
+vector$<$ T $>$ \hyperlink{class_graph_a3f62ba0e37c5c011299c93d60e3a8be3}{dfs} () const 
+\item 
+vector$<$ T $>$ \hyperlink{class_graph_a0e9598b98be2570eb432690411a577e8}{bfs} (\hyperlink{class_vertex}{Vertex}$<$ T $>$ $\ast$v) const 
+\item 
+int \hyperlink{class_graph_ab8fd74c3cf8dca6eaa82d39fd1216f52}{max\+New\+Children} (\hyperlink{class_vertex}{Vertex}$<$ T $>$ $\ast$v, T \&inf) const 
+\item 
+vector$<$ \hyperlink{class_vertex}{Vertex}$<$ T $>$ $\ast$ $>$ \hyperlink{class_graph_ab7dc5ec1c34df811d560021b726e95ec}{get\+Vertex\+Set} () const 
+\item 
+int \hyperlink{class_graph_a295932f117d92c825a97ec458e0fb332}{get\+Num\+Vertex} () const 
+\item 
+\hyperlink{class_vertex}{Vertex}$<$ T $>$ $\ast$ \hyperlink{class_graph_a08a95472b0d9bd7321660940807af060}{get\+Vertex} (const T \&v) const 
+\item 
+void \hyperlink{class_graph_af34eb86d804272e6e3e221a9ed688c53}{reset\+Indegrees} ()
+\item 
+vector$<$ \hyperlink{class_vertex}{Vertex}$<$ T $>$ $\ast$ $>$ \hyperlink{class_graph_aa1a3c754f51a888e25dff2b26dfb85fc}{get\+Sources} () const 
+\item 
+int \hyperlink{class_graph_a694dff81073c38b669057f0c6bd4cbb1}{get\+Num\+Cycles} ()
+\item 
+vector$<$ T $>$ \hyperlink{class_graph_ab4054ca572c10669dd3e05d6d41c116c}{get\+Path} (const T \&origin, const T \&dest)
+\item 
+void \hyperlink{class_graph_ae5264597aacaf4f45819e96a6d6c89aa}{unweighted\+Shortest\+Path} (const T \&v)
+\item 
+bool \hyperlink{class_graph_ab49d07c2bd6b8b30d5ae82bc558b821a}{is\+D\+A\+G} ()
+\item 
+void \hyperlink{class_graph_ae5161f4408bf1ead2b29d19d67fb04ee}{floyd\+Warshall\+Shortest\+Path} ()
+\item 
+int \hyperlink{class_graph_a7e137f1ef838395ac1044a944fa54448}{edge\+Cost} (int v\+Orig\+Index, int v\+Dest\+Index)
+\item 
+vector$<$ T $>$ \hyperlink{class_graph_ab23d1dae92a7f2b29dcb91a94336674c}{getfloyd\+Warshall\+Path} (const T \&origin, const T \&dest)
+\item 
+void \hyperlink{class_graph_aad1eda4beb8425d03ed1f3b8af397563}{getfloyd\+Warshall\+Path\+Aux} (int index1, int index2, vector$<$ T $>$ \&res)
+\item 
+\hyperlink{class_graph}{Graph}$<$ T $>$ \hyperlink{class_graph_a9589ad69099d91bfd77994d0e8558267}{make\+Graph\+With\+P\+O\+I} (vector$<$ T $>$ P\+O\+I)
+\item 
+\hyperlink{struct_solution}{Solution}$<$ T $>$ \hyperlink{class_graph_afbc0a16b439743653af993e3550b0429}{get\+Shortest\+Delivery\+Path\+Brute\+Force} (T start, T end)
+\item 
+void \hyperlink{class_graph_af22be17fb9d07eebc8463e75afac9e73}{get\+Shortest\+Delivery\+Path\+Path\+Brute\+Force\+Aux} (\hyperlink{class_vertex}{Vertex}$<$ T $>$ $\ast$v, \hyperlink{class_vertex}{Vertex}$<$ T $>$ $\ast$destination, \hyperlink{struct_solution}{Solution}$<$ T $>$ \&best\+Solution, \hyperlink{struct_solution}{Solution}$<$ T $>$ solution, int \&n\+Solutions)
+\item 
+\hyperlink{struct_solution}{Solution}$<$ T $>$ \hyperlink{class_graph_a8412825c9904d192c03770d387c1a5bf}{get\+Shortest\+Delivery\+Path\+Greedy} (T start, T end)
+\item 
+bool \hyperlink{class_graph_a90baa6b7442a9396d602b7b5d982ff89}{get\+Shortest\+Delivery\+Path\+Greedy\+Aux} (\hyperlink{class_vertex}{Vertex}$<$ T $>$ $\ast$v, \hyperlink{class_vertex}{Vertex}$<$ T $>$ $\ast$destination, \hyperlink{struct_solution}{Solution}$<$ T $>$ \&solution, double path\+Length)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_graph_ac61af3aafe6277215f5a3b3cc7d58ce2}{}\index{Graph@{Graph}!add\+Edge@{add\+Edge}}
+\index{add\+Edge@{add\+Edge}!Graph@{Graph}}
+\subsubsection[{add\+Edge(const T \&sourc, const T \&dest, double w)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Graph}$<$ T $>$\+::add\+Edge (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{sourc, }
+\item[{const T \&}]{dest, }
+\item[{double}]{w}
+\end{DoxyParamCaption}
+)}\label{class_graph_ac61af3aafe6277215f5a3b3cc7d58ce2}
+\hypertarget{class_graph_a00be284ea2be3b3d0f0d2e493b70245b}{}\index{Graph@{Graph}!add\+Vertex@{add\+Vertex}}
+\index{add\+Vertex@{add\+Vertex}!Graph@{Graph}}
+\subsubsection[{add\+Vertex(const T \&in)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Graph}$<$ T $>$\+::add\+Vertex (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{in}
+\end{DoxyParamCaption}
+)}\label{class_graph_a00be284ea2be3b3d0f0d2e493b70245b}
+\hypertarget{class_graph_a0e9598b98be2570eb432690411a577e8}{}\index{Graph@{Graph}!bfs@{bfs}}
+\index{bfs@{bfs}!Graph@{Graph}}
+\subsubsection[{bfs(\+Vertex$<$ T $>$ $\ast$v) const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ vector$<$ T $>$ {\bf Graph}$<$ T $>$\+::bfs (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex}$<$ T $>$ $\ast$}]{v}
+\end{DoxyParamCaption}
+) const}\label{class_graph_a0e9598b98be2570eb432690411a577e8}
+\hypertarget{class_graph_a3f62ba0e37c5c011299c93d60e3a8be3}{}\index{Graph@{Graph}!dfs@{dfs}}
+\index{dfs@{dfs}!Graph@{Graph}}
+\subsubsection[{dfs() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ vector$<$ T $>$ {\bf Graph}$<$ T $>$\+::dfs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_graph_a3f62ba0e37c5c011299c93d60e3a8be3}
+\hypertarget{class_graph_a7e137f1ef838395ac1044a944fa54448}{}\index{Graph@{Graph}!edge\+Cost@{edge\+Cost}}
+\index{edge\+Cost@{edge\+Cost}!Graph@{Graph}}
+\subsubsection[{edge\+Cost(int v\+Orig\+Index, int v\+Dest\+Index)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ int {\bf Graph}$<$ T $>$\+::edge\+Cost (
+\begin{DoxyParamCaption}
+\item[{int}]{v\+Orig\+Index, }
+\item[{int}]{v\+Dest\+Index}
+\end{DoxyParamCaption}
+)}\label{class_graph_a7e137f1ef838395ac1044a944fa54448}
+\hypertarget{class_graph_ae5161f4408bf1ead2b29d19d67fb04ee}{}\index{Graph@{Graph}!floyd\+Warshall\+Shortest\+Path@{floyd\+Warshall\+Shortest\+Path}}
+\index{floyd\+Warshall\+Shortest\+Path@{floyd\+Warshall\+Shortest\+Path}!Graph@{Graph}}
+\subsubsection[{floyd\+Warshall\+Shortest\+Path()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Graph}$<$ T $>$\+::floyd\+Warshall\+Shortest\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_graph_ae5161f4408bf1ead2b29d19d67fb04ee}
+\hypertarget{class_graph_ab23d1dae92a7f2b29dcb91a94336674c}{}\index{Graph@{Graph}!getfloyd\+Warshall\+Path@{getfloyd\+Warshall\+Path}}
+\index{getfloyd\+Warshall\+Path@{getfloyd\+Warshall\+Path}!Graph@{Graph}}
+\subsubsection[{getfloyd\+Warshall\+Path(const T \&origin, const T \&dest)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ vector$<$ T $>$ {\bf Graph}$<$ T $>$\+::getfloyd\+Warshall\+Path (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{origin, }
+\item[{const T \&}]{dest}
+\end{DoxyParamCaption}
+)}\label{class_graph_ab23d1dae92a7f2b29dcb91a94336674c}
+\hypertarget{class_graph_aad1eda4beb8425d03ed1f3b8af397563}{}\index{Graph@{Graph}!getfloyd\+Warshall\+Path\+Aux@{getfloyd\+Warshall\+Path\+Aux}}
+\index{getfloyd\+Warshall\+Path\+Aux@{getfloyd\+Warshall\+Path\+Aux}!Graph@{Graph}}
+\subsubsection[{getfloyd\+Warshall\+Path\+Aux(int index1, int index2, vector$<$ T $>$ \&res)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Graph}$<$ T $>$\+::getfloyd\+Warshall\+Path\+Aux (
+\begin{DoxyParamCaption}
+\item[{int}]{index1, }
+\item[{int}]{index2, }
+\item[{vector$<$ T $>$ \&}]{res}
+\end{DoxyParamCaption}
+)}\label{class_graph_aad1eda4beb8425d03ed1f3b8af397563}
+\hypertarget{class_graph_a694dff81073c38b669057f0c6bd4cbb1}{}\index{Graph@{Graph}!get\+Num\+Cycles@{get\+Num\+Cycles}}
+\index{get\+Num\+Cycles@{get\+Num\+Cycles}!Graph@{Graph}}
+\subsubsection[{get\+Num\+Cycles()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ int {\bf Graph}$<$ T $>$\+::get\+Num\+Cycles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_graph_a694dff81073c38b669057f0c6bd4cbb1}
+\hypertarget{class_graph_a295932f117d92c825a97ec458e0fb332}{}\index{Graph@{Graph}!get\+Num\+Vertex@{get\+Num\+Vertex}}
+\index{get\+Num\+Vertex@{get\+Num\+Vertex}!Graph@{Graph}}
+\subsubsection[{get\+Num\+Vertex() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ int {\bf Graph}$<$ T $>$\+::get\+Num\+Vertex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_graph_a295932f117d92c825a97ec458e0fb332}
+\hypertarget{class_graph_ab4054ca572c10669dd3e05d6d41c116c}{}\index{Graph@{Graph}!get\+Path@{get\+Path}}
+\index{get\+Path@{get\+Path}!Graph@{Graph}}
+\subsubsection[{get\+Path(const T \&origin, const T \&dest)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ vector$<$ T $>$ {\bf Graph}$<$ T $>$\+::get\+Path (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{origin, }
+\item[{const T \&}]{dest}
+\end{DoxyParamCaption}
+)}\label{class_graph_ab4054ca572c10669dd3e05d6d41c116c}
+\hypertarget{class_graph_afbc0a16b439743653af993e3550b0429}{}\index{Graph@{Graph}!get\+Shortest\+Delivery\+Path\+Brute\+Force@{get\+Shortest\+Delivery\+Path\+Brute\+Force}}
+\index{get\+Shortest\+Delivery\+Path\+Brute\+Force@{get\+Shortest\+Delivery\+Path\+Brute\+Force}!Graph@{Graph}}
+\subsubsection[{get\+Shortest\+Delivery\+Path\+Brute\+Force(\+T start, T end)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Solution}$<$ T $>$ {\bf Graph}$<$ T $>$\+::get\+Shortest\+Delivery\+Path\+Brute\+Force (
+\begin{DoxyParamCaption}
+\item[{T}]{start, }
+\item[{T}]{end}
+\end{DoxyParamCaption}
+)}\label{class_graph_afbc0a16b439743653af993e3550b0429}
+\hypertarget{class_graph_a8412825c9904d192c03770d387c1a5bf}{}\index{Graph@{Graph}!get\+Shortest\+Delivery\+Path\+Greedy@{get\+Shortest\+Delivery\+Path\+Greedy}}
+\index{get\+Shortest\+Delivery\+Path\+Greedy@{get\+Shortest\+Delivery\+Path\+Greedy}!Graph@{Graph}}
+\subsubsection[{get\+Shortest\+Delivery\+Path\+Greedy(\+T start, T end)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Solution}$<$ T $>$ {\bf Graph}$<$ T $>$\+::get\+Shortest\+Delivery\+Path\+Greedy (
+\begin{DoxyParamCaption}
+\item[{T}]{start, }
+\item[{T}]{end}
+\end{DoxyParamCaption}
+)}\label{class_graph_a8412825c9904d192c03770d387c1a5bf}
+\hypertarget{class_graph_a90baa6b7442a9396d602b7b5d982ff89}{}\index{Graph@{Graph}!get\+Shortest\+Delivery\+Path\+Greedy\+Aux@{get\+Shortest\+Delivery\+Path\+Greedy\+Aux}}
+\index{get\+Shortest\+Delivery\+Path\+Greedy\+Aux@{get\+Shortest\+Delivery\+Path\+Greedy\+Aux}!Graph@{Graph}}
+\subsubsection[{get\+Shortest\+Delivery\+Path\+Greedy\+Aux(\+Vertex$<$ T $>$ $\ast$v, Vertex$<$ T $>$ $\ast$destination, Solution$<$ T $>$ \&solution, double path\+Length)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Graph}$<$ T $>$\+::get\+Shortest\+Delivery\+Path\+Greedy\+Aux (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex}$<$ T $>$ $\ast$}]{v, }
+\item[{{\bf Vertex}$<$ T $>$ $\ast$}]{destination, }
+\item[{{\bf Solution}$<$ T $>$ \&}]{solution, }
+\item[{double}]{path\+Length}
+\end{DoxyParamCaption}
+)}\label{class_graph_a90baa6b7442a9396d602b7b5d982ff89}
+\hypertarget{class_graph_af22be17fb9d07eebc8463e75afac9e73}{}\index{Graph@{Graph}!get\+Shortest\+Delivery\+Path\+Path\+Brute\+Force\+Aux@{get\+Shortest\+Delivery\+Path\+Path\+Brute\+Force\+Aux}}
+\index{get\+Shortest\+Delivery\+Path\+Path\+Brute\+Force\+Aux@{get\+Shortest\+Delivery\+Path\+Path\+Brute\+Force\+Aux}!Graph@{Graph}}
+\subsubsection[{get\+Shortest\+Delivery\+Path\+Path\+Brute\+Force\+Aux(\+Vertex$<$ T $>$ $\ast$v, Vertex$<$ T $>$ $\ast$destination, Solution$<$ T $>$ \&best\+Solution, Solution$<$ T $>$ solution, int \&n\+Solutions)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Graph}$<$ T $>$\+::get\+Shortest\+Delivery\+Path\+Path\+Brute\+Force\+Aux (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex}$<$ T $>$ $\ast$}]{v, }
+\item[{{\bf Vertex}$<$ T $>$ $\ast$}]{destination, }
+\item[{{\bf Solution}$<$ T $>$ \&}]{best\+Solution, }
+\item[{{\bf Solution}$<$ T $>$}]{solution, }
+\item[{int \&}]{n\+Solutions}
+\end{DoxyParamCaption}
+)}\label{class_graph_af22be17fb9d07eebc8463e75afac9e73}
+\hypertarget{class_graph_aa1a3c754f51a888e25dff2b26dfb85fc}{}\index{Graph@{Graph}!get\+Sources@{get\+Sources}}
+\index{get\+Sources@{get\+Sources}!Graph@{Graph}}
+\subsubsection[{get\+Sources() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ vector$<$ {\bf Vertex}$<$ T $>$ $\ast$ $>$ {\bf Graph}$<$ T $>$\+::get\+Sources (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_graph_aa1a3c754f51a888e25dff2b26dfb85fc}
+\hypertarget{class_graph_a08a95472b0d9bd7321660940807af060}{}\index{Graph@{Graph}!get\+Vertex@{get\+Vertex}}
+\index{get\+Vertex@{get\+Vertex}!Graph@{Graph}}
+\subsubsection[{get\+Vertex(const T \&v) const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Vertex}$<$ T $>$ $\ast$ {\bf Graph}$<$ T $>$\+::get\+Vertex (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{v}
+\end{DoxyParamCaption}
+) const}\label{class_graph_a08a95472b0d9bd7321660940807af060}
+\hypertarget{class_graph_ab7dc5ec1c34df811d560021b726e95ec}{}\index{Graph@{Graph}!get\+Vertex\+Set@{get\+Vertex\+Set}}
+\index{get\+Vertex\+Set@{get\+Vertex\+Set}!Graph@{Graph}}
+\subsubsection[{get\+Vertex\+Set() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ vector$<$ {\bf Vertex}$<$ T $>$ $\ast$ $>$ {\bf Graph}$<$ T $>$\+::get\+Vertex\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_graph_ab7dc5ec1c34df811d560021b726e95ec}
+\hypertarget{class_graph_ab49d07c2bd6b8b30d5ae82bc558b821a}{}\index{Graph@{Graph}!is\+D\+A\+G@{is\+D\+A\+G}}
+\index{is\+D\+A\+G@{is\+D\+A\+G}!Graph@{Graph}}
+\subsubsection[{is\+D\+A\+G()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool {\bf Graph}$<$ T $>$\+::is\+D\+A\+G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_graph_ab49d07c2bd6b8b30d5ae82bc558b821a}
+\hypertarget{class_graph_a9589ad69099d91bfd77994d0e8558267}{}\index{Graph@{Graph}!make\+Graph\+With\+P\+O\+I@{make\+Graph\+With\+P\+O\+I}}
+\index{make\+Graph\+With\+P\+O\+I@{make\+Graph\+With\+P\+O\+I}!Graph@{Graph}}
+\subsubsection[{make\+Graph\+With\+P\+O\+I(vector$<$ T $>$ P\+O\+I)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Graph}$<$ T $>$ {\bf Graph}$<$ T $>$\+::make\+Graph\+With\+P\+O\+I (
+\begin{DoxyParamCaption}
+\item[{vector$<$ T $>$}]{P\+O\+I}
+\end{DoxyParamCaption}
+)}\label{class_graph_a9589ad69099d91bfd77994d0e8558267}
+\hypertarget{class_graph_ab8fd74c3cf8dca6eaa82d39fd1216f52}{}\index{Graph@{Graph}!max\+New\+Children@{max\+New\+Children}}
+\index{max\+New\+Children@{max\+New\+Children}!Graph@{Graph}}
+\subsubsection[{max\+New\+Children(\+Vertex$<$ T $>$ $\ast$v, T \&inf) const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf Graph}$<$ T $>$\+::max\+New\+Children (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex}$<$ T $>$ $\ast$}]{v, }
+\item[{T \&}]{inf}
+\end{DoxyParamCaption}
+) const}\label{class_graph_ab8fd74c3cf8dca6eaa82d39fd1216f52}
+\hypertarget{class_graph_a1106092a37366486cf55576f9ec01692}{}\index{Graph@{Graph}!remove\+Edge@{remove\+Edge}}
+\index{remove\+Edge@{remove\+Edge}!Graph@{Graph}}
+\subsubsection[{remove\+Edge(const T \&sourc, const T \&dest)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Graph}$<$ T $>$\+::remove\+Edge (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{sourc, }
+\item[{const T \&}]{dest}
+\end{DoxyParamCaption}
+)}\label{class_graph_a1106092a37366486cf55576f9ec01692}
+\hypertarget{class_graph_af9c903104ad69a7782979fa9caedf163}{}\index{Graph@{Graph}!remove\+Vertex@{remove\+Vertex}}
+\index{remove\+Vertex@{remove\+Vertex}!Graph@{Graph}}
+\subsubsection[{remove\+Vertex(const T \&in)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf Graph}$<$ T $>$\+::remove\+Vertex (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{in}
+\end{DoxyParamCaption}
+)}\label{class_graph_af9c903104ad69a7782979fa9caedf163}
+\hypertarget{class_graph_af34eb86d804272e6e3e221a9ed688c53}{}\index{Graph@{Graph}!reset\+Indegrees@{reset\+Indegrees}}
+\index{reset\+Indegrees@{reset\+Indegrees}!Graph@{Graph}}
+\subsubsection[{reset\+Indegrees()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Graph}$<$ T $>$\+::reset\+Indegrees (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_graph_af34eb86d804272e6e3e221a9ed688c53}
+\hypertarget{class_graph_ae5264597aacaf4f45819e96a6d6c89aa}{}\index{Graph@{Graph}!unweighted\+Shortest\+Path@{unweighted\+Shortest\+Path}}
+\index{unweighted\+Shortest\+Path@{unweighted\+Shortest\+Path}!Graph@{Graph}}
+\subsubsection[{unweighted\+Shortest\+Path(const T \&v)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Graph}$<$ T $>$\+::unweighted\+Shortest\+Path (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{v}
+\end{DoxyParamCaption}
+)}\label{class_graph_ae5264597aacaf4f45819e96a6d6c89aa}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_graph_8h}{Graph.\+h}\end{DoxyCompactItemize}

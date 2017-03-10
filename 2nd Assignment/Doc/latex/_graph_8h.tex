@@ -1,0 +1,52 @@
+\hypertarget{_graph_8h}{}\section{Graph.\+h File Reference}
+\label{_graph_8h}\index{Graph.\+h@{Graph.\+h}}
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$queue$>$}\\*
+{\ttfamily \#include $<$list$>$}\\*
+{\ttfamily \#include $<$limits.\+h$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_edge}{Edge$<$ T $>$}
+\item 
+class \hyperlink{class_graph}{Graph$<$ T $>$}
+\item 
+class \hyperlink{class_vertex}{Vertex$<$ T $>$}
+\item 
+struct \hyperlink{structvertex__greater__than}{vertex\+\_\+greater\+\_\+than$<$ T $>$}
+\item 
+class \hyperlink{class_edge}{Edge$<$ T $>$}
+\item 
+struct \hyperlink{struct_solution}{Solution$<$ T $>$}
+\item 
+class \hyperlink{class_graph}{Graph$<$ T $>$}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{_graph_8h_aa3df7e773082a47ef6f0d3b9c6e9f5df}{N\+O\+T\+\_\+\+V\+I\+S\+I\+T\+E\+D} = 0
+\item 
+const int \hyperlink{_graph_8h_a9d4d209eba9a9c40a529f914df741241}{B\+E\+I\+N\+G\+\_\+\+V\+I\+S\+I\+T\+E\+D} = 1
+\item 
+const int \hyperlink{_graph_8h_a969ae97a8eee1231386eb0b487abcb9f}{D\+O\+N\+E\+\_\+\+V\+I\+S\+I\+T\+E\+D} = 2
+\item 
+const int \hyperlink{_graph_8h_a9fff7b07b84324efa12018456a60d91b}{I\+N\+T\+\_\+\+I\+N\+F\+I\+N\+I\+T\+Y} = I\+N\+T\+\_\+\+M\+A\+X
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_graph_8h_a9d4d209eba9a9c40a529f914df741241}{}\index{Graph.\+h@{Graph.\+h}!B\+E\+I\+N\+G\+\_\+\+V\+I\+S\+I\+T\+E\+D@{B\+E\+I\+N\+G\+\_\+\+V\+I\+S\+I\+T\+E\+D}}
+\index{B\+E\+I\+N\+G\+\_\+\+V\+I\+S\+I\+T\+E\+D@{B\+E\+I\+N\+G\+\_\+\+V\+I\+S\+I\+T\+E\+D}!Graph.\+h@{Graph.\+h}}
+\subsubsection[{B\+E\+I\+N\+G\+\_\+\+V\+I\+S\+I\+T\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}const int B\+E\+I\+N\+G\+\_\+\+V\+I\+S\+I\+T\+E\+D = 1}\label{_graph_8h_a9d4d209eba9a9c40a529f914df741241}
+\hypertarget{_graph_8h_a969ae97a8eee1231386eb0b487abcb9f}{}\index{Graph.\+h@{Graph.\+h}!D\+O\+N\+E\+\_\+\+V\+I\+S\+I\+T\+E\+D@{D\+O\+N\+E\+\_\+\+V\+I\+S\+I\+T\+E\+D}}
+\index{D\+O\+N\+E\+\_\+\+V\+I\+S\+I\+T\+E\+D@{D\+O\+N\+E\+\_\+\+V\+I\+S\+I\+T\+E\+D}!Graph.\+h@{Graph.\+h}}
+\subsubsection[{D\+O\+N\+E\+\_\+\+V\+I\+S\+I\+T\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}const int D\+O\+N\+E\+\_\+\+V\+I\+S\+I\+T\+E\+D = 2}\label{_graph_8h_a969ae97a8eee1231386eb0b487abcb9f}
+\hypertarget{_graph_8h_a9fff7b07b84324efa12018456a60d91b}{}\index{Graph.\+h@{Graph.\+h}!I\+N\+T\+\_\+\+I\+N\+F\+I\+N\+I\+T\+Y@{I\+N\+T\+\_\+\+I\+N\+F\+I\+N\+I\+T\+Y}}
+\index{I\+N\+T\+\_\+\+I\+N\+F\+I\+N\+I\+T\+Y@{I\+N\+T\+\_\+\+I\+N\+F\+I\+N\+I\+T\+Y}!Graph.\+h@{Graph.\+h}}
+\subsubsection[{I\+N\+T\+\_\+\+I\+N\+F\+I\+N\+I\+T\+Y}]{\setlength{\rightskip}{0pt plus 5cm}const int I\+N\+T\+\_\+\+I\+N\+F\+I\+N\+I\+T\+Y = I\+N\+T\+\_\+\+M\+A\+X}\label{_graph_8h_a9fff7b07b84324efa12018456a60d91b}
+\hypertarget{_graph_8h_aa3df7e773082a47ef6f0d3b9c6e9f5df}{}\index{Graph.\+h@{Graph.\+h}!N\+O\+T\+\_\+\+V\+I\+S\+I\+T\+E\+D@{N\+O\+T\+\_\+\+V\+I\+S\+I\+T\+E\+D}}
+\index{N\+O\+T\+\_\+\+V\+I\+S\+I\+T\+E\+D@{N\+O\+T\+\_\+\+V\+I\+S\+I\+T\+E\+D}!Graph.\+h@{Graph.\+h}}
+\subsubsection[{N\+O\+T\+\_\+\+V\+I\+S\+I\+T\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}const int N\+O\+T\+\_\+\+V\+I\+S\+I\+T\+E\+D = 0}\label{_graph_8h_aa3df7e773082a47ef6f0d3b9c6e9f5df}
